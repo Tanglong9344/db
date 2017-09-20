@@ -32,11 +32,13 @@ VALUES
   (15, '小绿', '英语', '99'),
   (16, '小绿', '数学', '96');
   ```
+### 执行结果
+---
   ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
 
  ### MySQL实现行列转换
  ```
- -- 行列转换
+ -- 行列转换使用MAX()函数
 SELECT
   `name` AS '姓名', 
   MAX(CASE `subject` WHEN '语文' THEN `score` ELSE 0 END) AS '语文', 
@@ -47,7 +49,23 @@ FROM
 GROUP BY
   `g`.`name`
 ORDER BY `g`.`name`
+```
+---
+```
+---行列转换使用SUM()函数，（null 和 0 没有影响）
+SELECT
+ `name` AS '姓名', 
+ SUM(CASE `subject` WHEN '语文' THEN `score` ELSE null END) AS '语文', 
+ SUM(CASE `subject` WHEN '英语' THEN `score` ELSE null END) AS '英语', 
+ SUM(CASE `subject` WHEN '数学' THEN `score` ELSE null END) AS '数学'
+FROM
+ `grades` g
+GROUP BY
+ `g`.`name`
+ORDER BY `g`.`name`
 ````
+### 执行结果
+---
   ![columnToRow1](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow1.png)
 
 ### Orcal实现行列转换
