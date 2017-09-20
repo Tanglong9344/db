@@ -33,3 +33,19 @@ VALUES
   (16, '小绿', '数学', '96');
   ```
   ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
+
+ ### 使用 “case when then else end” 实现行列转换
+ ```
+ -- 行列转换
+SELECT
+  `name` AS '姓名', 
+  MAX(CASE `subject` WHEN '语文' THEN `score` ELSE 0 END) AS '语文', 
+  MAX(CASE `subject` WHEN '英语' THEN `score` ELSE 0 END) AS '英语', 
+  MAX(CASE `subject` WHEN '数学' THEN `score` ELSE 0 END) AS '数学'
+FROM
+  `grades` g
+GROUP BY
+  `g`.`name`
+ORDER BY `g`.`name`
+````
+  ![columnToRow1](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow1.png)
