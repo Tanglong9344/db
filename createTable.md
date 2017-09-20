@@ -1,3 +1,4 @@
+### 创建表并插入数据
 ```
 # Host: 127.0.0.1  (Version 5.7.18)
 # Date: 2017-09-20 21:38:18
@@ -31,4 +32,4 @@ VALUES
   (15, '小绿', '英语', '99'),
   (16, '小绿', '数学', '96');
   ```
-  
+  ![createTable](https://github.com/Tanglong9344/SQL/blob/master/picture/createTable.png)
