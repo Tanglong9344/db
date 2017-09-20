@@ -34,7 +34,7 @@ VALUES
   ```
   ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
 
- ### 使用 “case when then else end” 实现行列转换
+ ### MySQL实现行列转换
  ```
  -- 行列转换
 SELECT
@@ -49,3 +49,15 @@ GROUP BY
 ORDER BY `g`.`name`
 ````
   ![columnToRow1](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow1.png)
+
+### Orcal实现行列转换
+```
+ -- 行列转换
+SELECT`name` AS '姓名', 
+sum(decode(subject,'语文', score,0)) as '语文',
+sum(decode(subject,'数学', score,0)) as '数学',
+sum(decode(subject,'英语', score,0)) as '英语'
+FROM `grades` g
+GROUP BY `g`.`name`
+ORDER BY `g`.`name`
+```
