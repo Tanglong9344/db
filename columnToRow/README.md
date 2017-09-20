@@ -32,4 +32,4 @@ VALUES
   (15, '小绿', '英语', '99'),
   (16, '小绿', '数学', '96');
   ```
-  ![createTable](https://github.com/Tanglong9344/SQL/tree/master/columnToRow/picture)
+  ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
