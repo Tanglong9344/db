@@ -1,4 +1,5 @@
-﻿### 创建表并插入数据
+﻿# MySQL数据库操作
+### 创建表并插入数据
 ```
 # Host: 127.0.0.1  (Version 5.7.18)
 # Date: 2017-09-20 21:38:18
@@ -52,7 +53,7 @@ ORDER BY `g`.`name`
 ```
 ---
 ```
----行列转换使用SUM()函数，（null 和 0 没有影响）
+---  行列转换使用SUM()函数，（null 和 0 相同）
 SELECT
  `name` AS '姓名', 
  SUM(CASE `subject` WHEN '语文' THEN `score` ELSE null END) AS '语文', 
@@ -68,14 +69,78 @@ ORDER BY `g`.`name`
 ---
   ![columnToRow1](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow1.png)
 
+# Orcal数据库操作
+### 创建表并插入数据
+```
+prompt PL/SQL Developer import file
+prompt Created on 2017年9月21日 by tanglong
+set feedback off
+set define off
+prompt Disabling triggers for GRADES_TEST...
+alter table GRADES_TEST disable all triggers;
+prompt Deleting GRADES_TEST...
+delete from GRADES_TEST;
+commit;
+prompt Loading GRADES_TEST...
+insert into GRADES_TEST (name, subject, score)
+values ('小明', '英语', '96');
+insert into GRADES_TEST (name, subject, score)
+values ('小明', '数学', '100');
+insert into GRADES_TEST (name, subject, score)
+values ('小黑', '语文', '68');
+insert into GRADES_TEST (name, subject, score)
+values ('小黑', '英语', '66');
+insert into GRADES_TEST (name, subject, score)
+values ('小黑', '数学', '66');
+insert into GRADES_TEST (name, subject, score)
+values ('小宏', '语文', '88');
+insert into GRADES_TEST (name, subject, score)
+values ('小宏', '英语', '89');
+insert into GRADES_TEST (name, subject, score)
+values ('小宏', '数学', '93');
+insert into GRADES_TEST (name, subject, score)
+values ('小绿', '语文', '87');
+insert into GRADES_TEST (name, subject, score)
+values ('小绿', '英语', '99');
+insert into GRADES_TEST (name, subject, score)
+values ('小绿', '数学', '96');
+insert into GRADES_TEST (name, subject, score)
+values ('小明', '语文', '98');
+commit;
+prompt 12 records loaded
+prompt Enabling triggers for GRADES_TEST...
+alter table GRADES_TEST enable all triggers;
+set feedback on
+set define on
+prompt Done.
+```
+### 执行结果
+---
+  ![createTable2](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable2.png)
+
 ### Orcal实现行列转换
 ```
- -- 行列转换
-SELECT`name` AS '姓名', 
-sum(decode(subject,'语文', score,0)) as '语文',
-sum(decode(subject,'数学', score,0)) as '数学',
-sum(decode(subject,'英语', score,0)) as '英语'
-FROM `grades` g
-GROUP BY `g`.`name`
-ORDER BY `g`.`name`
+---  行列转换使用MAX()函数，（null 和 0 不同）
+SELECT g.name as 姓名,
+       max(decode(g.subject, '语文', g.score, 0)) as 语文,
+       max(decode(g.subject, '数学', g.score, 0)) as 数学,
+       max(decode(g.subject, '英语', g.score, 0)) as 英语
+  FROM grades_test g
+GROUP BY g . name
+ORDER BY g . name desc
 ```
+---
+
+```
+---  行列转换使用SUM()函数，（null 和 0 相同）
+SELECT g.name as 姓名,
+       sum(decode(g.subject, '语文', g.score, null)) as 语文,
+       sum(decode(g.subject, '数学', g.score, null)) as 数学,
+       sum(decode(g.subject, '英语', g.score, null)) as 英语
+  FROM grades_test g
+GROUP BY g . name
+ORDER BY g . name desc
+```
+### 执行结果
+---
+  ![columnToRow2](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow2.png)
