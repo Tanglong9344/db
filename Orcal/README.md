@@ -15,7 +15,7 @@ select t.name as 姓名,
   from ORCAL_TEST t;
 ```
 ### 执行结果
-![toChar]()
+![toChar](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/toChar.png)
 
 + ### <h3 id="toDate">to_date()函数</h3> [返回目录](#abstract)
 ```
@@ -25,7 +25,7 @@ select t.name as 姓名,
   from ORCAL_TEST t;
 ```
 ### 执行结果
-![toDate]()
+![toDate](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/toDate.png)
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
@@ -69,4 +69,4 @@ insert into ORCAL_TEST (name, birth_date, study_date)
 values ('小红','2000-01-01',to_date('2017-09-03 12:01:06','yyyy-mm-dd HH24:MI:SS'));
 ```
 ### 完成后显示结果
-![测试表1]()
+![测试表1](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/testTable1.png)
