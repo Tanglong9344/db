@@ -33,7 +33,7 @@ VALUES
   (15, '小绿', '英语', '99'),
   (16, '小绿', '数学', '96');
   ```
-### 执行结果
+### 完成后的显示结果
 ---
   ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
 
@@ -72,16 +72,33 @@ ORDER BY `g`.`name`
 # Orcal数据库操作
 ### 创建表并插入数据
 ```
-prompt PL/SQL Developer import file
-prompt Created on 2017年9月21日 by tanglong
-set feedback off
-set define off
-prompt Disabling triggers for GRADES_TEST...
-alter table GRADES_TEST disable all triggers;
-prompt Deleting GRADES_TEST...
-delete from GRADES_TEST;
-commit;
-prompt Loading GRADES_TEST...
+-- Create table
+create table GRADES_TEST
+(
+  name    VARCHAR2(10) not null,
+  subject VARCHAR2(30) not null,
+  score   VARCHAR2(10)
+)
+tablespace TESTDB
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column GRADES_TEST.name
+  is '学生姓名';
+comment on column GRADES_TEST.subject
+  is '学科类别';
+comment on column GRADES_TEST.score
+  is '分数';
+
+-- insert data
 insert into GRADES_TEST (name, subject, score)
 values ('小明', '英语', '96');
 insert into GRADES_TEST (name, subject, score)
@@ -106,21 +123,14 @@ insert into GRADES_TEST (name, subject, score)
 values ('小绿', '数学', '96');
 insert into GRADES_TEST (name, subject, score)
 values ('小明', '语文', '98');
-commit;
-prompt 12 records loaded
-prompt Enabling triggers for GRADES_TEST...
-alter table GRADES_TEST enable all triggers;
-set feedback on
-set define on
-prompt Done.
 ```
-### 执行结果
+### 完成后的显示结果
 ---
   ![createTable2](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable2.png)
 
 ### Orcal实现行列转换
 ```
----  行列转换使用MAX()函数，（null 和 0 不同）
+---  行列转换使用MAX()，DECODE()函数，（null 和 0 不同）
 SELECT g.name as 姓名,
        max(decode(g.subject, '语文', g.score, 0)) as 语文,
        max(decode(g.subject, '数学', g.score, 0)) as 数学,
@@ -132,7 +142,7 @@ ORDER BY g . name desc
 ---
 
 ```
----  行列转换使用SUM()函数，（null 和 0 相同）
+---  行列转换使用SUM()，DECODE()函数函数，（null 和 0 相同）
 SELECT g.name as 姓名,
        sum(decode(g.subject, '语文', g.score, null)) as 语文,
        sum(decode(g.subject, '数学', g.score, null)) as 数学,
@@ -140,6 +150,60 @@ SELECT g.name as 姓名,
   FROM grades_test g
 GROUP BY g . name
 ORDER BY g . name desc
+```
+---
+
+```
+---  行列转换使用MAX()，CASE()函数函数
+SELECT g.name as 姓名,
+       MAX(CASE g.subject
+             WHEN '语文' THEN
+              score
+             ELSE
+              null
+           END) AS 语文,
+       MAX(CASE g.subject
+             WHEN '英语' THEN
+              score
+             ELSE
+              null
+           END) AS 英语,
+       MAX(CASE g.subject
+             WHEN '数学' THEN
+              score
+             ELSE
+              null
+           END) AS 数学
+  FROM grades_test g
+ GROUP BY g . name
+ ORDER BY g . name desc
+```
+---
+
+```
+---  行列转换使用SUM()，CASE()函数函数
+SELECT g.name as 姓名,
+       sum(CASE g.subject
+             WHEN '语文' THEN
+              score
+             ELSE
+              null
+           END) AS 语文,
+       sum(CASE g.subject
+             WHEN '英语' THEN
+              score
+             ELSE
+              null
+           END) AS 英语,
+       sum(CASE g.subject
+             WHEN '数学' THEN
+              score
+             ELSE
+              null
+           END) AS 数学
+  FROM grades_test g
+ GROUP BY g . name
+ ORDER BY g . name desc
 ```
 ### 执行结果
 ---
