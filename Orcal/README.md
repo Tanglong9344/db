@@ -2,10 +2,11 @@
 ### 目录
 + [to_char()函数](#toChar)
 + [to_date()函数](#toDate)
-
++ [regexp_replace()函数](#regexpReplace)
+---
 ### 测试表 <h3 id="testTable"></h3>
 + [测试表1](#testTable1)
-
+---
 + ### <h3 id="toChar">to_char()函数</h3> [返回目录](#abstract)
 ```
 select t.name as 姓名,
@@ -16,6 +17,7 @@ select t.name as 姓名,
 ```
 ### 执行结果
 ![toChar](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/toChar.png)
+---
 
 + ### <h3 id="toDate">to_date()函数</h3> [返回目录](#abstract)
 ```
@@ -26,6 +28,21 @@ select t.name as 姓名,
 ```
 ### 执行结果
 ![toDate](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/toDate.png)
+---
+
++ ### <h3 id="regexpReplace">regexp_replace()函数</h3> [返回目录](#abstract)
+```
+-- 参数：1，列名，2.匹配模式，3.替代成什么，
+--       4.开始位置，5.第几个匹配
+select regexp_replace(t.name, '.', '*', 2, 1) as 姓名,
+       t.birth_date,
+       t.study_date
+  from ORCAL_TEST t;
+```
+### 执行结果
+![regexpReplace](https://github.com/Tanglong9344/SQL/blob/master/Orcal/picture/regexpReplace.png)
+
+----
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
