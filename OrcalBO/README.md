@@ -45,7 +45,7 @@ select regexp_replace(t.name, '.', '*', 2, 1) as 姓名,
 
 ----
 
-+ ### <h3 id="getCurrentTime">获取当前时间</h3> [返回目录](#abstract)
++ ### <h3 id="getCuttentTime">获取当前时间</h3> [返回目录](#abstract)
 ```
 select sysdate as 当前时间 from grades_test;
 ```

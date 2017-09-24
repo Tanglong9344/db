@@ -7,7 +7,7 @@
 
 ----
 
-+ ### <h3 id="getCurrentTime">获取当前时间</h3> [返回目录](#abstract)
++ ### <h3 id="getCuttentTime">获取当前时间</h3> [返回目录](#abstract)
 ```
 select now() as '当前时间' from test.grades;
 ```
