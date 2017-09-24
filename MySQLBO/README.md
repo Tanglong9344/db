@@ -34,7 +34,7 @@ FROM
   `test`.`mysql_test` t
 ```
 ### 执行结果
-![getCurrentTime](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime.png)
+![yearMonthFloor](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/yearMonthFloor.png)
 
 ----
 
