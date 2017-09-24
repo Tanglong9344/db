@@ -4,6 +4,7 @@
 + [to_date()函数](#toDate)
 + [regexp_replace()函数](#regexpReplace)
 + [获取当前时间](#getCuttentTime)
++ [floor()函数和months_between()函数](#floorAndMonths_between)
 ---
 ### 测试表 <h3 id="testTable"></h3>
 + [测试表1](#testTable1)
@@ -51,6 +52,19 @@ select sysdate as 当前时间 from grades_test;
 ```
 ### 执行结果
 ![getCurrentTime](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/getCurrentTime.png)
+
+----
++ ### <h3 id="floorAndMonths_between">fllor()函数和months_between()函数</h3> [返回目录](#abstract)
+```
+-- floor()函数，取整数
+-- months_between()函数，获取两个日期之间的月份数
+
+SELECT t.name as 姓名,
+       floor(months_between(sysdate, to_date(t.birth_date, 'yyyy-mm-dd')) / 12) as 年龄
+  from orcal_test t
+```
+### 执行结果
+![floorAndMonths_between](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/floorAndMonths_between.png)
 
 ----
 
