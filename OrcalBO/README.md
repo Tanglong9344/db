@@ -72,11 +72,14 @@ SELECT t.name as 姓名,
 + ### <h3 id="rankOver">rank() over函数</h3> [返回目录](#abstract)
 ```
 -- rank() over函数，显示并列排名
+-- rownum 用于获取前n行数据
 
-SELECT t.name as 姓名,
-       t.birth_date as 出生日期,
-       rank() over(order by t.birth_date desc) as 排名
-  from orcal_test t
+select *
+  from (SELECT t.name as 姓名,
+               t.birth_date as 出生日期,
+               rank() over(order by t.birth_date desc) as 排名
+          from orcal_test t)
+ where rownum < 4 -- 获取前三行数据
 ```
 ### 执行结果
 ![rankOver](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/rankOver.png)
