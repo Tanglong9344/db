@@ -2,6 +2,7 @@
 ### 目录
 + [获取当前时间](#getCuttentTime)
 + [year()函数+month()函数+floor()函数](#yearMonthFloor)
++ [replace()函数](#replace)
 
 ---
 
@@ -12,10 +13,42 @@
 
 + ### <h3 id="getCuttentTime">获取当前时间</h3> [返回目录](#abstract)
 ```
+# 使用now()函数
+
 select now() as '当前时间' from test.mysql_test;
 ```
 ### 执行结果
 ![getCurrentTime](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime.png)
+
+----
+
+```
+# 使用sysdate()函数
+
+SELECT SYSDATE() as '当前时间' FROM `test`.`mysql_test` t
+```
+### 执行结果
+![getCurrentTime2](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime2.png)
+
+----
+
+```
+# 使用curdate()函数 获取日期
+
+SELECT curdate() as '当前时间' FROM `test`.`mysql_test` t
+```
+### 执行结果
+![getCurrentTime3](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime3.png)
+
+----
+
+```
+# 使用curtime()函数
+
+SELECT curtime() as '当前时间' FROM `test`.`mysql_test` t
+```
+### 执行结果
+![getCurrentTime4](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime4.png)
 
 ----
 
@@ -37,6 +70,17 @@ FROM
 ![yearMonthFloor](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/yearMonthFloor.png)
 
 ----
+
++ ### <h3 id="replace">replace()函数</h3> [返回目录](#abstract)
+```
+# 参数1 表示替换的列名
+# 参数2 表示需要替换的内容
+# 参数3 表示替换的目标内容
+
+SELECT REPLACE(`t`.`name`, ('小'), '*' as '隐藏的姓名' FROM `test`.`mysql_test` t
+```
+### 执行结果
+![replace](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/replace.png)
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```

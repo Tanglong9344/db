@@ -5,6 +5,7 @@
 + [regexp_replace()函数](#regexpReplace)
 + [获取当前时间](#getCuttentTime)
 + [floor()函数和months_between()函数](#floorAndMonths_between)
++ [rank() over函数](#rankOver)
 ---
 ### 测试表 <h3 id="testTable"></h3>
 + [测试表1](#testTable1)
@@ -67,6 +68,18 @@ SELECT t.name as 姓名,
 ![floorAndMonths_between](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/floorAndMonths_between.png)
 
 ----
+
++ ### <h3 id="rankOver">rank() over函数</h3> [返回目录](#abstract)
+```
+-- rank() over函数，显示并列排名
+
+SELECT t.name as 姓名,
+       t.birth_date as 出生日期,
+       rank() over(order by t.birth_date desc) as 排名
+  from orcal_test t
+```
+### 执行结果
+![rankOver](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/rankOver.png)
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
