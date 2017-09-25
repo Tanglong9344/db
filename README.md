@@ -4,3 +4,5 @@
 + [MySQL常用函数](https://github.com/Tanglong9344/SQL/tree/master/MySQLBO)
 + [Orcal常用函数](https://github.com/Tanglong9344/SQL/tree/master/OrcalBO)
 + [行列转换](https://github.com/Tanglong9344/SQL/tree/master/columnToRow)
+
+> ### 参考资料：[How to Write Efficient TOP N Queries in SQL](https://blog.jooq.org)
