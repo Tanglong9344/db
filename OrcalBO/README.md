@@ -6,6 +6,7 @@
 + [获取当前时间](#getCuttentTime)
 + [floor()函数和months_between()函数](#floorAndMonths_between)
 + [rank() over函数](#rankOver)
++ [UNION连接符](#union)
 ---
 ### 测试表 <h3 id="testTable"></h3>
 + [测试表1](#testTable1)
@@ -84,6 +85,18 @@ select *
 ### 执行结果
 ![rankOver](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/rankOver.png)
 
+---
++ ### <h3 id="union">UNION连接符</h3> [返回目录](#abstract)
+```
+SELECT t.name 字段联合
+  FROM orcal_test t
+UNION 
+  (SELECT t.birth_date FROM orcal_test t);
+```
+### 执行结果
+![union](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/union.png)
+
+---
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
 -- Create table

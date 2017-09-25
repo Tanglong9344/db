@@ -1,8 +1,9 @@
-# MySQL 常用函数 <h3 id="abstract"></h3>
+# MySQL 常用函数和操作 <h3 id="abstract"></h3>
 ### 目录
 + [获取当前时间](#getCuttentTime)
 + [year()函数+month()函数+floor()函数](#yearMonthFloor)
 + [replace()函数](#replace)
++ [UNION连接符](#union)
 
 ---
 
@@ -81,6 +82,19 @@ SELECT REPLACE(`t`.`name`, ('小'), '*' as '隐藏的姓名' FROM `test`.`mysql_
 ```
 ### 执行结果
 ![replace](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/replace.png)
+
+---
+
++ ### <h3 id="union">UNION连接符</h3> [返回目录](#abstract)
+```
+SELECT `t`.`name` FROM `test`.`mysql_test` t
+UNION
+(SELECT `t`.`birth_date` FROM `test`.`mysql_test` t);
+```
+### 执行结果
+![union](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/union.png)
+
+---
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
