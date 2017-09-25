@@ -95,6 +95,16 @@ UNION
 ![union](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/union.png)
 
 ---
+```
+-- UNION ALL 不去重
+
+SELECT `t`.`name` FROM `test`.`mysql_test` t
+UNION ALL
+(SELECT `t`.`name` FROM `test`.`mysql_test` t);
+```
+### 执行结果
+![unionAll](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/unionAll.png)
+---
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```

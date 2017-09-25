@@ -88,6 +88,8 @@ select *
 ---
 + ### <h3 id="union">UNION连接符</h3> [返回目录](#abstract)
 ```
+-- UNION 会去重
+
 SELECT t.name 字段联合
   FROM orcal_test t
 UNION 
@@ -95,6 +97,17 @@ UNION
 ```
 ### 执行结果
 ![union](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/union.png)
+---
+```
+-- UNION ALL 不去重
+
+SELECT t.name 字段联合
+  FROM orcal_test t
+UNION ALL
+  (SELECT t.birth_date FROM orcal_test t);
+```
+### 执行结果
+![unionAll](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/unionAll.png)
 
 ---
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
