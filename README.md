@@ -7,4 +7,4 @@
 
 > ### 参考资料：
 > + [Java SQL And JOOQ](https://blog.jooq.org)
-> + [图解JOIN](http://blog.jobbole.com/40443/)
+> + [图解 SQL JOIN](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins)
