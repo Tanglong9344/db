@@ -4,7 +4,7 @@
 + [year()函数+month()函数+floor()函数](#yearMonthFloor)
 + [replace()函数](#replace)
 + [UNION连接符](#union)
-
++ [LIMIT & OFFSET](#limitOffset)
 ---
 
 ### 测试表 <h3 id="testTable"></h3>
@@ -104,6 +104,24 @@ UNION ALL
 ```
 ### 执行结果
 ![unionAll](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/unionAll.png)
+---
+
++ ### <h3 id="limitOffset">LIMIT & OFFSET</h3> [返回目录](#abstract)
+```
+-- 使用limit取出从第一条数据开始（不包括第一条）起的三条数据
+SELECT * FROM `test`.`mysql_test` t
+limit 1,3;
+```
+### 执行结果
+![limitOffset1](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/limitOffset1.png)
+---
+```
+-- 使用limit取出从第一条数据开始（不包括第一条）起的第三条数据
+SELECT * FROM `test`.`mysql_test` t
+limit 1 offset 3;
+```
+### 执行结果
+![limitOffset2](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/limitOffset2.png)
 ---
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
