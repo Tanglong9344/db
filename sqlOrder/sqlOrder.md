@@ -33,3 +33,5 @@
 10. DISTINCT：将重复的行从vt8中去除产生vt9
 11. ORDER BY：将vt9的行按order by子句中的列列表排序生成一个游标vc10
 12. TOP：从vc10的开始处选择指定数量或比例的行生成vt11 并返回调用者
+---
+[资料来源：http://www.nowamagic.net/librarys/veda/detail/1502](http://www.nowamagic.net/librarys/veda/detail/1502)
