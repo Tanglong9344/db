@@ -4,7 +4,7 @@
 + [MySQL常用函数](https://github.com/Tanglong9344/SQL/tree/master/MySQLBO)
 + [Orcal常用函数](https://github.com/Tanglong9344/SQL/tree/master/OrcalBO)
 + [行列转换](https://github.com/Tanglong9344/SQL/tree/master/columnToRow)
-+ [SQL语句执行顺序](https://github.com/Tanglong9344/SQL/tree/master/sqlOrder/sqlOrder.md)
++ [数据库优化](https://github.com/Tanglong9344/SQL/tree/master/sqlOptimize)
 
 > ### 参考资料：
 > + [Java SQL And JOOQ](https://blog.jooq.org)
