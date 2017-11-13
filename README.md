@@ -1,5 +1,5 @@
 # 目录
-+ [SQL(Structured Query Language)](https://github.com/Tanglong9344/db/tree/master/SQL(Structure%20Query%20Language))
++ [SQL(Structured Query Language)语言](https://github.com/Tanglong9344/db/tree/master/SQL)
 + [MySQL基本配置和基本操作](https://github.com/Tanglong9344/SQL/blob/master/MySql/MySQL.md)
 + [MySQL常用函数](https://github.com/Tanglong9344/SQL/tree/master/MySQLBO)
 + [Orcal常用函数](https://github.com/Tanglong9344/SQL/tree/master/OrcalBO)
