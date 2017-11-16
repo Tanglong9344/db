@@ -54,7 +54,7 @@ CREATE TABLE `Department` (
 );
 ```
 ---
-##### 说明方式1(隐式说明)：REFERENCES<父表名>(<属性名>)
+### 说明方式1(隐式说明)REFERENCES<父表名>(<属性名>)
 ```
 # Dno属性是父表(Department)的主键Dno
 CREATE TABLE `Employee` (
@@ -68,7 +68,7 @@ CREATE TABLE `Employee` (
 	 PRIMARY KEY (`Eno`)
 );
 ```
-##### 说明方式2(显式说明)：CONSTRAINT<约束名>FOREIGN KEY(<属性名>) REFERENCES<父表名>(<属性名>)
+### 说明方式2(显式说明)CONSTRAINT<约束名>FOREIGN KEY(<属性名>) REFERENCES<父表名>(<属性名>)
 ```
 CREATE TABLE `Employee` (
   `Eno` char(4) NOT NULL COMMENT '职工号',
@@ -86,10 +86,10 @@ CREATE TABLE `Employee` (
 ---
 ![fk.PNG](pictures/fk.PNG)
 ---
-##### 参照完整性约束的实现策略
-	+ 限制策略
-	+ 级联策略
-	+ 置空策略
+### 参照完整性约束的实现策略
++ 限制策略
++ 级联策略
++ 置空策略
 ```
 CREATE TABLE `Employee` (
   `Eno` char(4) NOT NULL COMMENT '职工号',
