@@ -1,5 +1,5 @@
-### DDL(Data Definition Language)
-#### 关键字:create alter drop
+# DDL(Data Definition Language)
+### 关键字:create alter drop
 + 创建基本表|CREATE TABLE
 	1. 基本格式:
 	```
