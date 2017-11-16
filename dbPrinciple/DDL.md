@@ -30,7 +30,7 @@
 	);
 	```
 	---
-	![create.PNG](/picture/create.PNG)
+	![create.PNG](pictures/create.PNG)
 	---
 + 表结构修改|ALTER TABLE
 	1. 基本格式:
@@ -55,7 +55,7 @@
 	ADD Emgr CHAR(4) NULL;
 	```
 	---
-	![add.PNG](/picture/add.PNG)
+	![add.PNG](pictures/add.PNG)
 	---
 	```
 	# 修改列 Emgr 的数据类型为CHAR(10)
@@ -63,7 +63,7 @@
 	  MODIFY COLUMN `Emgr` char(10);
 	```
 	---
-	![modify.PNG](/picture/modify.PNG)
+	![modify.PNG](pictures/modify.PNG)
 	---
 	```
 	# 删除列 Emgr
@@ -71,7 +71,7 @@
 	DROP COLUMN Emgr;
 	```
 	---
-	![drop.PNG](/picture/drop.PNG)
+	![drop.PNG](pictures/drop.PNG)
 	---
 	```
 	# 为Ename添加唯一约束条件(索引)
@@ -82,7 +82,7 @@
 	ADD CONSTRAINT UQ_Ename UNIQUE(Ename);
 	```
 	---
-	![uq.PNG](/picture/uq.PNG)
+	![uq.PNG](pictures/uq.PNG)
 	---
 	```
 	# 删除约束条件(索引)
@@ -90,7 +90,7 @@
 	DROP INDEX Ename;#需要制定约束名
 	```
 	---
-	![nuq.PNG](/picture/nuq.PNG)
+	![nuq.PNG](pictures/nuq.PNG)
 	---
 + 删除基本表|DROP TABLE
 	1. 基本格式:
