@@ -19,7 +19,7 @@
 	  ('001', '唐龙', '男', '66', '0', '工程师', '01');
 	```
 	---
-	![insert.PNG](/picture/insert.PNG)
+	![insert.PNG](pictures/insert.PNG)
 	---
 + 修改数据|UPDATE
 	1. 基本格式:
@@ -40,7 +40,7 @@
 	WHERE `Ename` = '唐龙'
 	```
 	---
-	![update.PNG](/picture/update.PNG)
+	![update.PNG](pictures/update.PNG)
 	---
 + 删除数据|DELETE FROM
 	1. 基本格式:
@@ -59,7 +59,7 @@
 	WHERE `Eno` = '001'
 	```
 	---
-	![delete.PNG](/picture/delete.PNG)
+	![delete.PNG](pictures/delete.PNG)
 	---
 + 数据的查询|SELECT
 	1. 基本格式:
@@ -100,7 +100,7 @@
 	  `Eno` = '001'
 	```
 	---
-	![select.PNG](/picture/select.PNG)
+	![select.PNG](pictures/select.PNG)
 	---
 	+ 集函数
 		1. COUNT([DISTINCT|ALL]*):统计结果中元组个数
@@ -117,7 +117,7 @@
 	GROUP BY Dno;
 	```
 	---
-	![gb1.PNG](/picture/gb1.PNG)
+	![gb1.PNG](pictures/gb1.PNG)
 	---
 	```
 	# 获取各部门的平均年龄<40的数据
@@ -127,7 +127,7 @@
 	HAVING AVG(Age)<40;
 	```
 	---
-	![gb2.PNG](/picture/gb2.PNG)
+	![gb2.PNG](pictures/gb2.PNG)
 	---
 	+ 多关系连接查询|JOIN
 		1. 交叉连接(CROSS JOIN):
