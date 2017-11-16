@@ -1,4 +1,4 @@
-### 完整性约束(保持数据的一致性)
+# 完整性约束(保持数据的一致性)
 + 实体完整性约束和主码(PRIMARY KEY 唯一且不能为NULL)
 ```
 # 使用PRIMARY KEY将属性Eno直接说明为主码
@@ -106,5 +106,5 @@ CREATE TABLE `Employee` (
 	ON UPDATE CASCADE) #级联
 ```
 ---
-![cascade.PNG](picture/cascades.PNG)
+![cascade.PNG](pictures/cascade.PNG)
 ---
