@@ -1,5 +1,5 @@
-### DML(Data Manipulation Language)
-#### 关键字：insert update delete select
+# DML(Data Manipulation Language)
+### 关键字：insert update delete select
 + 插入数据|INSERT INTO
 	1. 基本格式:
 	```
