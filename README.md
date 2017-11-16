@@ -1,10 +1,10 @@
 # 目录
-+ [SQL(Structured Query Language)语言](https://github.com/Tanglong9344/db/tree/master/SQL)
++ [数据库原理](https://github.com/Tanglong9344/db/tree/master/dbPrinciple)
 + [MySQL基本配置和基本操作](https://github.com/Tanglong9344/SQL/blob/master/MySql/MySQL.md)
 + [MySQL常用函数](https://github.com/Tanglong9344/SQL/tree/master/MySQLBO)
 + [Orcal常用函数](https://github.com/Tanglong9344/SQL/tree/master/OrcalBO)
 + [行列转换](https://github.com/Tanglong9344/SQL/tree/master/columnToRow)
-+ [数据库优化](https://github.com/Tanglong9344/SQL/tree/master/sqlOptimize)
++ [数据库优化](https://github.com/Tanglong9344/SQL/tree/master/dbOptimize)
 
 > ### 参考资料：
 > + [Java SQL And JOOQ](https://blog.jooq.org)
