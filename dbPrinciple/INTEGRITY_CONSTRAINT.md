@@ -27,7 +27,7 @@ CREATE TABLE `Employee` (
 );
 ```
 ---
-![pk.PNG](/picture/pk.PNG)
+![pk.PNG](pictures/pk.PNG)
 ---
 + 候选码(UNIQUE 可以有多个且可为NULL)
 ```
@@ -44,7 +44,7 @@ CREATE TABLE `Employee` (
 );
 ```
 ---
-![unique.PNG](/picture/unique.PNG)
+![unique.PNG](pictures/unique.PNG)
 ---
 + 参照完整性和外部码
 ```
@@ -84,7 +84,7 @@ CREATE TABLE `Employee` (
 );
 ```
 ---
-![fk.PNG](/picture/fk.PNG)
+![fk.PNG](pictures/fk.PNG)
 ---
 ##### 参照完整性约束的实现策略
 	+ 限制策略
@@ -106,5 +106,5 @@ CREATE TABLE `Employee` (
 	ON UPDATE CASCADE) #级联
 ```
 ---
-![cascade.PNG](/picture/cascade.PNG)
+![cascade.PNG](picture/cascades.PNG)
 ---
