@@ -108,3 +108,21 @@ CREATE TABLE `Employee` (
 ---
 ![cascade.PNG](pictures/cascade.PNG)
 ---
++ 用户自定义完整性约束：CHECK(<条件>)
+```
+# 对性别取值进行约束
+CREATE TABLE `Employee` (
+  `Eno` char(4) NOT NULL COMMENT '职工号',
+  `Ename` char(8) NOT NULL COMMENT '姓名',
+  `Sex` char(2) NOT NULL DEFAULT '男' COMMENT '性别',
+  `Age` int(11) COMMENT '年龄',
+  `Is_Marry` char(1) COMMENT '婚姻状况',
+  `Title` char(6) COMMENT '职位',
+  `Dno` char(2) COMMENT '部门号',
+   PRIMARY KEY (`Eno`),
+   CONSTRAINT check_1 CHECK(Sex IN('男','女')));
+```
++ 删除约束：ALTER TABLE<表名> DROP CONSTRAINT<约束名>
+### 备注
++ 可以使用CONSTRAINT<约束名><约束条件>对约束进行命名
++ 完整性约束的检查会花费系统一定的时间，故不可滥用。
