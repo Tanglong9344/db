@@ -29,7 +29,7 @@
 	WITH CHECK OPTION;
 	```
 	---
-	![view.PNG](/picture/view.PNG)
+	![view.PNG](pictures/view.PNG)
 	---
 + 删除视图|DROP VIEW
 	1. 基本格式:
