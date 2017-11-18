@@ -14,6 +14,27 @@
 		+ 存储过程的返回值不能被直接使用而函数可以。
 
 + 函数定义
+### 示例1
 ```
-
+#删除函数
+DROP FUNCTION IF EXISTS simpleFun;
+#创建无参函数，返回varchar(20)
+CREATE FUNCTION simpleFun() RETURNS varchar(20)
+RETURN 'Hello MySQL!';
+#调用函数
+SELECT simpleFun() AS '结果';
 ```
+---
+![fun1.PNG](pictures/fun1.PNG)
+---
+### 示例2
+```
+#创建函数，根据传入的姓名，返回年龄信息
+CREATE FUNCTION nameFun(Ename char(8)) RETURNS INT
+RETURN (SELECT `e`.`Age` FROM `Employee` e WHERE `e`.`Ename` = Ename);
+#调用函数
+SELECT nameFun('王超') AS '年龄';
+```
+---
+![fun2.PNG](pictures/fun2.PNG)
+---
