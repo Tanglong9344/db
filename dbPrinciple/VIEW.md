@@ -22,6 +22,7 @@
 	```
 	3. 示例：
 	```
+	# 针对部门号为‘01’的数据建立视图
 	CREATE
 	  VIEW `Employee_View`
 	  AS
