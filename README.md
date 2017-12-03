@@ -1,5 +1,6 @@
 # 目录
 + [关系数据库原理](https://github.com/Tanglong9344/db/tree/master/dbPrinciple)
++ [Mysql核心技术](https://github.com/Tanglong9344/db/tree/master/MysqlIntertals)
 + [MySQL基本配置和基本操作](https://github.com/Tanglong9344/SQL/blob/master/MySql/MySQL.md)
 + [MySQL常用函数](https://github.com/Tanglong9344/SQL/tree/master/MySQLBO)
 + [Orcal常用函数](https://github.com/Tanglong9344/SQL/tree/master/OrcalBO)
