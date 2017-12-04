@@ -19,7 +19,7 @@
 select now() as '当前时间' from test.mysql_test;
 ```
 ### 执行结果
-![getCurrentTime](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime.png)
+![getCurrentTime](picture/getCurrentTime.png)
 
 ----
 
@@ -29,7 +29,7 @@ select now() as '当前时间' from test.mysql_test;
 SELECT SYSDATE() as '当前时间' FROM `test`.`mysql_test` t
 ```
 ### 执行结果
-![getCurrentTime2](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime2.png)
+![getCurrentTime2](picture/getCurrentTime2.png)
 
 ----
 
@@ -39,7 +39,7 @@ SELECT SYSDATE() as '当前时间' FROM `test`.`mysql_test` t
 SELECT curdate() as '当前时间' FROM `test`.`mysql_test` t
 ```
 ### 执行结果
-![getCurrentTime3](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime3.png)
+![getCurrentTime3](picture/getCurrentTime3.png)
 
 ----
 
@@ -49,7 +49,7 @@ SELECT curdate() as '当前时间' FROM `test`.`mysql_test` t
 SELECT curtime() as '当前时间' FROM `test`.`mysql_test` t
 ```
 ### 执行结果
-![getCurrentTime4](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/getCurrentTime4.png)
+![getCurrentTime4](picture/getCurrentTime4.png)
 
 ----
 
@@ -68,7 +68,7 @@ FROM
   `test`.`mysql_test` t
 ```
 ### 执行结果
-![yearMonthFloor](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/yearMonthFloor.png)
+![yearMonthFloor](picture/yearMonthFloor.png)
 
 ----
 
@@ -81,7 +81,7 @@ FROM
 SELECT REPLACE(`t`.`name`, ('小'), '*' as '隐藏的姓名' FROM `test`.`mysql_test` t
 ```
 ### 执行结果
-![replace](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/replace.png)
+![replace](picture/replace.png)
 
 ---
 
@@ -92,7 +92,7 @@ UNION
 (SELECT `t`.`birth_date` FROM `test`.`mysql_test` t);
 ```
 ### 执行结果
-![union](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/union.png)
+![union](picture/union.png)
 
 ---
 ```
@@ -103,7 +103,7 @@ UNION ALL
 (SELECT `t`.`name` FROM `test`.`mysql_test` t);
 ```
 ### 执行结果
-![unionAll](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/unionAll.png)
+![unionAll](picture/unionAll.png)
 ---
 
 + ### <h3 id="limitOffset">LIMIT & OFFSET</h3> [返回目录](#abstract)
@@ -113,7 +113,7 @@ SELECT * FROM `test`.`mysql_test` t
 limit 1,3;
 ```
 ### 执行结果
-![limitOffset1](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/limitOffset1.png)
+![limitOffset1](picture/limitOffset1.png)
 ---
 ```
 -- 使用limit取出从第一条数据开始（不包括第一条）起的第三条数据
@@ -121,7 +121,7 @@ SELECT * FROM `test`.`mysql_test` t
 limit 1 offset 3;
 ```
 ### 执行结果
-![limitOffset2](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/limitOffset2.png)
+![limitOffset2](picture/limitOffset2.png)
 ---
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
@@ -153,4 +153,4 @@ VALUES
   (6, '刘备', '1663-05-02', '1668-05-06');
 ```
 ### 完成后显示结果
-![测试表1](https://github.com/Tanglong9344/SQL/blob/master/MySQLBO/picture/testTable1.png)
+![测试表1](picture/testTable1.png)

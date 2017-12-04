@@ -38,38 +38,37 @@ bind-address = 127.0.0.1
 ```
 1.net start mysql 开启MySQL服务
 ```
-![netStartMysql](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/netStartMysql.png)
+![netStartMysql](picture/netStartMysql.png)
 ```
 2.net stop mysql  关闭MySQL服务
 ```
-![netStopMysql](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/netStopMysql.png)
+![netStopMysql](picture/netStopMysql.png)
 ```
 3.mysql -u root -p 以管理员身份登录，然后输入密码
 ```
-![mysqlRoot](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlRoot.png)
+![mysqlRoot](picture/mysqlRoot.png)
 ```
 4.set password=password("123456");设置MySQL密码为123456
 ```
-![mysqlPwd](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlPwd.png)
+![mysqlPwd](picture/mysqlPwd.png)
 ```
 5.show databases; 显示所有数据库
 ```
-![mysqlShowDB](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlShowDB.png)
+![mysqlShowDB](picture/mysqlShowDB.png)
 ```
 6.use mysl;(mysql是数据库名称) 选择要操作的Mysql数据库，使用该命令后所有Mysql命令都只针对该数据库。
 ```
-![useMysql](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/useMysql.png)
+![useMysql](picture/useMysql.png)
 ```
 7.show tables; 显示数据库下的表
 ```
-![mysqlShowTable](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlShowTable.png)
+![mysqlShowTable](picture/mysqlShowTable.png)
 ```
 8.show columns from account; 显示表account 内的列
 ```
-![mysqlShowCol](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlShowCol.png)
+![mysqlShowCol](picture/mysqlShowCol.png)
 ```
 9.select * from account;  SQL语句使用(其他语句同理)从表account查询数据
 ```
-![mysqlSelect](https://github.com/Tanglong9344/SQL/blob/master/MySql/picture/mysqlSelect.png)
-
+![mysqlSelect](picture/mysqlSelect.png)
 ---
