@@ -70,13 +70,16 @@
 	```
 	![mysqlSelect](picture/mysqlSelect.png)
 	```
-	10.explain select * from employee e where e.Ename='AAA'; #显示optimizer执行当前SQL语句所做的的操作，默认水平显示
+	10.explain select * from employee e where e.Ename='AAA'; 
+	#显示optimizer执行当前SQL语句所做的的操作，默认水平显示
 	```
 	![mysqlExplain](picture/mysqlExplain.png)
-		```
-	11.explain select * from employee e where e.Ename='AAA'\G;#显示optimizer执行当前SQL语句所做的的操作，\G表示垂直显示
+	```
+	11.explain select * from employee e where e.Ename='AAA'\G;
+	#显示optimizer执行当前SQL语句所做的的操作，\G表示垂直显示
 	```
 	![mysqlExplainG](picture/mysqlExplainG.png)
+	```
 	```
 	12. exit;退出
 	```
