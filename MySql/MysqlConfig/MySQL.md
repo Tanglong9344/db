@@ -31,8 +31,8 @@
 	3.4，输入mysql -u root -p ,默认无密码。
 	3.5 将密码设置为123456 set password=password("123456");
 	```
----
-* mysql 命令行。
+	---
+	* mysql 命令行。
 	```
 	1.net start mysql #开启MySQL服务
 	```
@@ -79,7 +79,6 @@
 	#显示optimizer执行当前SQL语句所做的的操作，\G表示垂直显示
 	```
 	![mysqlExplainG](picture/mysqlExplainG.png)
-	```
 	```
 	12. exit;退出
 	```
