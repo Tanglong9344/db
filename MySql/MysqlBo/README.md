@@ -5,6 +5,7 @@
 + [replace()函数](#replace)
 + [UNION连接符](#union)
 + [LIMIT & OFFSET](#limitOffset)
++ [SQL语句EXPLAIN](#explain)
 ---
 
 ### 测试表 <h3 id="testTable"></h3>
@@ -122,6 +123,15 @@ limit 1 offset 3;
 ```
 ### 执行结果
 ![limitOffset2](picture/limitOffset2.png)
+---
++ ### <h3 id="explain">SQL语句EXPLAIN</h3> [返回目录](#abstract)
+```
+# 查看SQL语句的具体执行情况
+EXPLAIN SELECT * FROM
+  `mysql_test` m,`employee` e
+WHERE `e`.`Ename` = '王小' AND `m`.`name` LIKE '小%';
+```
+![explain](picture/explain.png)
 ---
 
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
