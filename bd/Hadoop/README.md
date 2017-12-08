@@ -6,9 +6,6 @@
 ![MapReduce](pictures/MapReduce.JPG)
 ---
 + HDFS
----
-![HDFS](pictures/HDFS.JPG)
----
 	+ NameNode(单点)
 	```
 	NameNode可以看作是分布式文件系统中的管理者，
@@ -46,6 +43,9 @@
 		2. 通知DataNode相互复制Block。
 		3. DataNode开始直接相互复制。
 		```
+---
+![HDFS](pictures/HDFS.JPG)
+---
 
 + 分布式计算设计原则
 	+ Moving Computation is Cheaper than Moving Data
