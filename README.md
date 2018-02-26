@@ -5,6 +5,7 @@
 + [行列转换](https://github.com/Tanglong9344/SQL/tree/master/columnToRow)
 + [数据库优化](https://github.com/Tanglong9344/SQL/tree/master/dbOptimize)
 + [NoSQL](https://github.com/Tanglong9344/db/tree/master/nosql)
++ [NpSQLvRDB](https://github.com/Tanglong9344/db/blob/master/RDBvNOSQL.md)
 + [大数据](https://github.com/Tanglong9344/db/tree/master/bd)
 
 > ### 参考资料：
