@@ -1,4 +1,10 @@
 # Mysql 变量
++ 所有变量
+```mysql
+show variables;
+```
+---
+![allVariables.png](pictures/allVariables.png)
 + 自动提交(默认开启)
 ```mysql
 # show the state of 'autocommit'
