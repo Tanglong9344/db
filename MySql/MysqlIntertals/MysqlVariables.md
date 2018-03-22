@@ -45,3 +45,8 @@ show variables like '%table_size%';
 ```
 ---
 ![tableSize.png](pictures/tableSize.png)
+
+
+### STI
+---
++ 随机分布将会大大降低缓存命中率。
