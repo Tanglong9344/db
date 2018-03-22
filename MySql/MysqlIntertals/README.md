@@ -4,3 +4,5 @@
 + [Mysql Optimizer](optimizer.md)
 + [Mysql variables](MysqlVariables.md)
 + [Mysql 服务架构](MySQL服务架构.md)
++ [Mysql 细节](MysqlDetails.md)
++ [Mysql DataType](MysqlDataType.md)
