@@ -7,6 +7,8 @@
 + [LIMIT & OFFSET](#limitOffset)
 + [SQL语句EXPLAIN](#explain)
 + [ip转换](#ip)
++ [left & right获取子串](#lr)
++ [if](#if)
 ---
 
 ### 测试表 <h3 id="testTable"></h3>
@@ -143,6 +145,34 @@ select distinct inet_ntoa(3232235777) as 'ip' from char_test;
 ![ip1.png](picture/ip1.png)
 ---
 ![ip2.png](picture/ip2.png)
+---
++ ### <h3 id="lr">left & right获取子串</h3> [返回目录](#testTable)
+```
+select left("abcdefg",4) as 'l' from char_test;
+```
+---
+![lr.png](picture/lr.png)
+---
++ ### <h3 id="if">if函数</h3> [返回目录](#testTable)
+```
+DROP TABLE IF EXISTS `atest`;
+CREATE TABLE `atest` (
+  `id` int NOT NULL,
+  `name` char(20),
+  PRIMARY KEY (`id`)
+);
+INSERT
+  INTO `atest`
+  (`id`, `name`)
+VALUES
+  (1, 'n1'),
+  (2, 'n2'),
+  (3, 'n3');
+UPDATE `atest` SET `name` = IF(`name` = 'n1', 'n1_new', NULL);
+select * from atest;
+```
+---
+![id.png](picture/if.png)
 ---
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
