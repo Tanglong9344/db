@@ -89,6 +89,12 @@ select * from atest;
 ```
 ---
 ![columnModify.png](pictures/columnModify.png)
+# 禁用和使用索引
+```mysql
+alter table atest disable keys; # 禁用索引
+
+alter table atest enable keys; # 使用索引
+```
 ### STI
 ---
 + 复制更新是一个很有效的方式。
