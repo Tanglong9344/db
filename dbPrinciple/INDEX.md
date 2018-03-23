@@ -56,3 +56,8 @@
 ---
 聚簇索引的顺序就是数据的物理存储顺序，一张表只有一个聚簇索引。
 
+
+### 资料
+---
++ [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
+
