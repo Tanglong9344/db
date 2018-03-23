@@ -6,6 +6,7 @@
 + [UNION连接符](#union)
 + [LIMIT & OFFSET](#limitOffset)
 + [SQL语句EXPLAIN](#explain)
++ [ip转换](#ip)
 ---
 
 ### 测试表 <h3 id="testTable"></h3>
@@ -133,7 +134,16 @@ WHERE `e`.`Ename` = '王小' AND `m`.`name` LIKE '小%';
 ```
 ![explain](picture/explain.png)
 ---
++ ### <h3 id="ip">ip转换</h3> [返回目录](#abstract)
+```
+select distinct inet_aton('192.168.1.1') as 'ip' from char_test;
 
+select distinct inet_ntoa(3232235777) as 'ip' from char_test;
+```
+![ip1.png](picture/ip1.png)
+---
+![ip2.png](picture/ip2.png)
+---
 + ### <h3 id="testTable1">测试表1</h3> [返回目录](#testTable)
 ```
 # Host: 127.0.0.1  (Version 5.7.18)
