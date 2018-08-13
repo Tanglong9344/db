@@ -1,2 +1,2 @@
 # sqlServer语句
-+ [1](1.md)
++ [rank,datename,获取数据库中表的数量](1.md)
