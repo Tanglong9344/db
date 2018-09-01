@@ -1,4 +1,4 @@
 # sqlServer笔记
-+ [自增长id](1.md)
-+ [mybatis多表查询](2.md)
-+ [sqlserver 字符串](3.md)
++ [自增长id](自增长id.md)
++ [mybatis多表查询](mybatis多表查询.md)
++ [sqlserver 字符串](char.md)
