@@ -10,10 +10,9 @@
 + [大数据](https://github.com/Tanglong9344/db/tree/master/bd)
 
 > ### 参考资料
----
  + [Java SQL And JOOQ](https://blog.jooq.org)
  + [图解 SQL JOIN](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins)
- >### 搜索引擎
+> ### 搜索引擎
  + [Lucene](http://lucene.apache.org/)
  + [Apache Hive](https://cwiki.apache.org/confluence/display/Hive/Home)
  + [Sphinx](http://sphinxsearch.com/)
