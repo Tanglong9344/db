@@ -29,14 +29,17 @@
 	（执行完上面命令后，MySQL会自建一个data文件夹，并且建好默认数据库，登录的用户名为root，密码为空）
 	3.3，输入 net start mysql 启动服务
 	3.4，输入mysql -u root -p ,默认无密码。
+	```
 	3.5 将密码设置为password 
 	+ 5.7.9及之前的版本
-	    set password=password("password");
+		set password=password("password");
 	+ 5.7.9之后的版本
-	    ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER; #修改加密规则 
-   	    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; #更新一下用户的密码 
-            FLUSH PRIVILEGES; #刷新权限 
-	```
+		ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER; #修改加密规则 
+		
+		ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; #更新一下用户的密码 
+		
+		FLUSH PRIVILEGES; #刷新权限 
+	
 	---
 	* mysql 命令行。
 	```
