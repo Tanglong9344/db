@@ -113,6 +113,8 @@ UNION ALL
 + ### <h3 id="limitOffset">LIMIT & OFFSET</h3> [返回目录](#abstract)
 ```
 -- 使用limit取出从第一条数据开始（不包括第一条）起的三条数据
+-- 可用于分页<==>sqlserver row_number()
+-- limit n <==>sqlserver top n
 SELECT * FROM `test`.`mysql_test` t
 limit 1,3;
 ```
