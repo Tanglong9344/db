@@ -9,6 +9,7 @@
 + [ip转换](#ip)
 + [left & right获取子串](#lr)
 + [if](#if)
++ [并列排名](#rank)
 ---
 
 ### 测试表 <h3 id="testTable"></h3>
@@ -206,3 +207,17 @@ VALUES
 ```
 ### 完成后显示结果
 ![测试表1](picture/testTable1.png)
++ ### <h3 id="rank">并列排名</h3> [返回目录](#testTable)
+```sql
+select s.*,
+CASE 
+   WHEN @lastStep = s.step_number
+     THEN @CurRank 
+   WHEN @lastStep := s.step_number
+     THEN @curRank := @curRank + 1    
+  END AS rank 
+from (select * 
+from rel_user_step where deleted=0 order by step_number desc) s,(select @curRank:=0,@lastStep:=null) r
+```
+### 结果
+![rank](picture/rank.png)
