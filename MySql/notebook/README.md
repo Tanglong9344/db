@@ -7,3 +7,9 @@ select IFNULL(sum(score),0) from score
 ```
 将serverTimezone=UTC修改为serverTimezone=GMT%2B8或者serve(北京时间=格林威治时间+8小时)
 ```
++ 数据按天显示
+```sql
+select DATE_FORMAT(u.create_time,'%Y-%m-%d') as day,IFNULL(sum(u.id),0) as sum_id from user u
+where u.deleted=0
+group by day;
+```
