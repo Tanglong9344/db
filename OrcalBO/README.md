@@ -20,7 +20,7 @@ select t.name as 姓名,
   from ORCAL_TEST t;
 ```
 ### 执行结果
-![toChar](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/toChar.png)
+![toChar](picture/toChar.png)
 ---
 
 + ### <h3 id="toDate">to_date()函数</h3> [返回目录](#abstract)
@@ -31,7 +31,7 @@ select t.name as 姓名,
   from ORCAL_TEST t;
 ```
 ### 执行结果
-![toDate](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/toDate.png)
+![toDate](picture/toDate.png)
 ---
 
 + ### <h3 id="regexpReplace">regexp_replace()函数</h3> [返回目录](#abstract)
@@ -44,7 +44,7 @@ select regexp_replace(t.name, '.', '*', 2, 1) as 姓名,
   from ORCAL_TEST t;
 ```
 ### 执行结果
-![regexpReplace](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/regexpReplace.png)
+![regexpReplace](picture/regexpReplace.png)
 
 ----
 
@@ -53,7 +53,7 @@ select regexp_replace(t.name, '.', '*', 2, 1) as 姓名,
 select sysdate as 当前时间 from grades_test;
 ```
 ### 执行结果
-![getCurrentTime](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/getCurrentTime.png)
+![getCurrentTime](picture/getCurrentTime.png)
 
 ----
 + ### <h3 id="floorAndMonths_between">fllor()函数和months_between()函数</h3> [返回目录](#abstract)
@@ -66,7 +66,7 @@ SELECT t.name as 姓名,
   from orcal_test t
 ```
 ### 执行结果
-![floorAndMonths_between](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/floorAndMonths_between.png)
+![floorAndMonths_between](picture/floorAndMonths_between.png)
 
 ----
 
@@ -83,7 +83,7 @@ select *
  where rownum < 4 -- 获取前三行数据
 ```
 ### 执行结果
-![rankOver](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/rankOver.png)
+![rankOver](picture/rankOver.png)
 
 ---
 + ### <h3 id="union">UNION连接符</h3> [返回目录](#abstract)
@@ -152,4 +152,4 @@ insert into ORCAL_TEST (name, birth_date, study_date)
 values ('小红','2000-01-01',to_date('2017-09-03 12:01:06','yyyy-mm-dd HH24:MI:SS'));
 ```
 ### 完成后显示结果
-![测试表1](https://github.com/Tanglong9344/SQL/blob/master/OrcalBO/picture/testTable1.png)
+![测试表1](picture/testTable1.png)

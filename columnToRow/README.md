@@ -35,7 +35,7 @@ VALUES
   ```
 ### 完成后的显示结果
 ---
-  ![createTable](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable.png)
+  ![createTable](picture/createTable.png)
 
  ### MySQL实现行列转换
  ```
@@ -67,7 +67,7 @@ ORDER BY `g`.`name`
 ````
 ### 执行结果
 ---
-  ![columnToRow1](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow1.png)
+  ![columnToRow1](picture/columnToRow1.png)
 
 # Orcal数据库操作
 ### 创建表并插入数据
@@ -126,7 +126,7 @@ values ('小明', '语文', '98');
 ```
 ### 完成后的显示结果
 ---
-  ![createTable2](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/createTable2.png)
+  ![createTable2](picture/createTable2.png)
 
 ### Orcal实现行列转换
 ```
@@ -207,4 +207,4 @@ SELECT g.name as 姓名,
 ```
 ### 执行结果
 ---
-  ![columnToRow2](https://github.com/Tanglong9344/SQL/blob/master/columnToRow/picture/columnToRow2.png)
+  ![columnToRow2](picture/columnToRow2.png)
