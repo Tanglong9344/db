@@ -30,26 +30,26 @@
   <dependency>
     <groupId>com.microsoft.sqlserver</groupId>
     <artifactId>mssql-jdbc</artifactId>
-    <version>8.1.0.jre8-preview</version>
+    <version>8.1.0.jre13-preview</version>
     <scope>test</scope>
   </dependency>
   ```
   + 驱动加载
   ```java
-  Class.forName("com.microsoft.jdbc.sqlserver.SQLServerDriver");
+  Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
   ```
   + 连接地址
   ```
   jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=test
   ```
 + Orcal
- + 驱动下载
+ + 驱动下载(maven无效，导入jar)
   ```xml
-  <!-- https://mvnrepository.com/artifact/ojdbc/ojdbc -->
+  <!-- https://mvnrepository.com/artifact/oracle/ojdbc -->
   <dependency>
-      <groupId>ojdbc</groupId>
+      <groupId>oracle</groupId>
       <artifactId>ojdbc</artifactId>
-      <version>14</version>
+      <version>1.4</version>
   </dependency>
   ```
   + 驱动加载
