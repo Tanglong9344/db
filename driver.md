@@ -25,6 +25,15 @@
   ```
 + Sqlserver
   + [驱动下载](https://docs.microsoft.com/zh-cn/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-2017)
+  ```xml
+  <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+  <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>mssql-jdbc</artifactId>
+      <version>6.2.2.jre8</version>
+      <scope>test</scope>
+  </dependency>
+  ```
   + 驱动加载
   ```java
   Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
