@@ -40,7 +40,7 @@
   ```
   + 连接地址
   ```
-  jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=test
+  jdbc:sqlserver://localhost:1433;database=test
   ```
 + Orcal
  + 驱动下载(maven无效，导入jar)
