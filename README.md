@@ -2,7 +2,7 @@
 + [关系数据库原理](dbPrinciple)
 + [Mysql数据库](MySql)
 + [Orcal常用函数](OrcalBO)
-+ [SqlServer](sqlserver/README.md)
++ [SqlServer](sqlserver)
 + [行列转换](columnToRow)
 + [数据库优化](dbOptimize)
 + [数据库驱动](driver.md)
