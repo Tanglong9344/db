@@ -13,3 +13,8 @@ select DATE_FORMAT(u.create_time,'%Y-%m-%d') as day,IFNULL(sum(u.id),0) as sum_i
 where u.deleted=0
 group by day;
 ```
++ 命令行执行sql文件
+```
+1. use database
+2. source test.sql
+```
