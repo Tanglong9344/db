@@ -18,3 +18,7 @@ group by day;
 1. use database
 2. source test.sql
 ```
++ 命令行导入sql文件
+```
+mysql  -uusername -ppassword --default-character-set=utf8 databaseName < backup.sql
+```
