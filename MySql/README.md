@@ -6,4 +6,4 @@
 + [数据库优化](mysqlOptimize/README.md)
 + [MySql笔记](notebook/)
 + [Mysql操作命令](MysqlOrder.md)
-+ [Mysql原理](mysqlPrinciple.md)
++ [Mysql原理](MysqlPrinciple.md)
