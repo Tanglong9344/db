@@ -8,9 +8,9 @@
 	文件内容：
 	[mysqld]
 	# 设置mysql的安装目录
-	basedir=D:\mysql-5.7.18-winx64
+	basedir=xx
 	# 设置mysql数据库的数据的存放目录
-	datadir=D:\mysql-5.7.18-winx64\data
+	datadir=xx/data
 	#设置3306端口
 	port = 3306 
 	# 允许最大连接数
@@ -21,6 +21,15 @@
 	default-storage-engine=INNODB 
 	#绑定地址
 	bind-address = 127.0.0.1
+	#开启log_bin
+	log-bin=mysql-bin
+	binlog_format=mixed
+	server-id = 1
+	#slow query
+	expire_logs_days = 10
+	slow_query_log=1
+	slow-query-log-file=xx/data/mysql-slow.log
+	long_query_time=3
 	#开放远程访问权限，即可以任意密码登录
 	#skip-grant-tables 
 	3.以管理员方式打开cmd
